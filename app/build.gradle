@@ -1,16 +1,17 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+// apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     defaultConfig {
         applicationId 'com.yariksoffice.javaopencvplaygroung'
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
+        namespace "com.yariksoffice.javaopencvplaygroung"
     }
     buildTypes {
         debug {
@@ -22,10 +23,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
+//    kotlin {
+  //      jvmToolchain(17)
+   // }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
         incremental true
     }
 }
@@ -52,7 +55,7 @@ dependencies {
     implementation 'androidx.camera:camera-lifecycle:1.0.0'
     implementation "androidx.camera:camera-view:1.0.0-alpha23"
 
-    implementation 'pub.devrel:easypermissions:0.4.0'
+    implementation 'pub.devrel:easypermissions:3.0.0' //0.4.0
 
     implementation 'com.github.mukeshsolanki:photofilter:1.0.2'
 }
