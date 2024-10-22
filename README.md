@@ -63,7 +63,7 @@ dependencies {
   - App fails after pressing the directory icon to pick an image.
  
 
-I am not a mobile app developer and I never used Kotlin or Java so that's all I could do for the assignment. So please be aware that the project is not what you are searching for. But if you decide to contribute for developed more this project, I tried to write clean code but it may look trash to you :upside_down_face:. So good luck!
+I am not a mobile app developer and I never used Kotlin or Java so that's all I could do for the assignment. So please be aware that the project is not what you are searching for. But if you decide to contribute to developing more the project, I tried to write clean code but it may look trash to you :upside_down_face:. So good luck!
 
 ## Contribute
 Feel free to contribute!
